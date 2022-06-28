@@ -1,0 +1,16 @@
+1. Metrics before optimization
+FP 1196.2 ms
+FCP 1196.2 ms
+LCP 7437
+DCL 1193.0 ms
+
+2. The maximum amount of content is placed at the top of teh page is
+- desktop resolution?
+
+3. done
+
+4. Metrics after optimizaton
+FP 56.2 ms
+FCP 56.2 ms
+LCP 7437
+DCL 27.8 ms

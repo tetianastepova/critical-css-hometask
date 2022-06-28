@@ -1,4 +1,5 @@
 const path = require('path');
+const CriticalCssPlugin = require('critical-css-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCss = require('mini-css-extract-plugin');
 
@@ -37,6 +38,12 @@ module.exports = {
         }),
         new miniCss({
             filename: 'style.css',
+        }),
+        new CriticalCssPlugin({
+            target: {
+                css: 'critical.css',
+                uncritical: 'uncritical.css',
+            }
         }),
     ],
 };
